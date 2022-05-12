@@ -1,0 +1,39 @@
+.all-head {
+    text-align: center;
+}
+
+.primer-head {
+    margin: 50px;
+    font-weight: bold;
+    font-family: "PT Serif", serif;
+}
+
+.limit {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;     /* fallback */
+   max-height: 32px;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   margin-top: 10px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999;
+    margin: 0px 5px;
+}
+
+.discount {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ff147b;
+}

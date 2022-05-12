@@ -1,0 +1,37 @@
+.mega-menu-link {
+    margin-right: 30px;
+}
+
+.main-mega {
+    z-index: 9;
+    position: absolute;
+    background-color: white;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.text-main {
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: grey
+}
+
+.text-main:link {
+    text-decoration: none;
+    color: grey !important;
+}
+
+.text-main:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-main:hover {
+    color: #ff147b !important;
+}
+
+#basic-button {
+    text-transform: capitalize;
+}

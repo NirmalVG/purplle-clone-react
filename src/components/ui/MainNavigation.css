@@ -1,0 +1,56 @@
+.main-logo {
+    width: 96px;
+    height: 53px;
+}
+
+.elite {
+    width: 36px;
+    height: 30px;
+}
+
+.link-list {
+    color: black !important;
+    font-weight: bold;
+}
+
+.link-list:hover {
+    color: #ff147b !important;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ff147b;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff147b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.category-nav {
+    margin-top: 10px;
+    font-family: "PT Serif", serif;
+}
+
+@media screen and (max-width: 992px) {
+    .mega {
+        display: none;
+    }
+}
+
+

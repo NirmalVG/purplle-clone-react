@@ -1,0 +1,50 @@
+.offer-nav {
+    background-color: #f9d3e8;
+    height: 55px;
+    position: relative;
+}
+
+.logo-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+}
+
+.flat-offer {
+    padding: 12px;
+}
+
+.flat-text {
+    font-weight: 300;
+}
+
+.use-code {
+    border: 2px dashed #ff147b;
+    background-color: white;
+    padding: 3px 15px 3px 15px;
+}
+
+.close-head {
+    margin-right: 0px;
+}
+
+.close-button {
+    margin-left: 20px;
+}
+
+.code-name {
+    color: #ff147b;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+    .offer-nav {
+        display: none;
+        position: absolute;
+    }
+}

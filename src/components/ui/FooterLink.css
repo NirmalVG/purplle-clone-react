@@ -1,0 +1,143 @@
+.copyright {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.text-reset {
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.text-reset a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-reset a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-reset a:hover {
+    color: #ff147b !important;
+}
+
+.banking-img {
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.nav-icons {
+    display: block;
+    width: 100%;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 2px;
+}
+
+.social-network a.icoYoutube:hover {
+    background-color: #FF0000;
+}
+
+.social-network a.icoEmail:hover {
+    background-color: #696969;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #db3236;
+}
+
+.social-network a.icoPinterest:hover {
+    background-color: #E60023;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3b5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
+    background-color: #bc2a8d;
+}
+
+.social-network a.icoInstagram:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoEmail:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoPinterest:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44bcdd;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 25px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #000;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.icon-section {
+    background-color: #fff;
+}
