@@ -1,5 +1,4 @@
 import React from "react";
-import "./BestSellersSection.css";
 import { Container, Row, Col } from "react-bootstrap";
 import BestSellersProductCard from "./BestSellersProductCard";
 import bestSellers from "../../data/bestSellers";

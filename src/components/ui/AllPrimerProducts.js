@@ -1,5 +1,4 @@
 import React from "react";
-import "./AllPrimerProducts.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import primerProducts from "../../data/primerProducts";
 

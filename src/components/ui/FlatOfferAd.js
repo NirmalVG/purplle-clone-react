@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import "./FlatOfferAd.css";
 import flatOfferAds from "../../data/flatOfferAds";
 
 const FlatOfferAd = () => {

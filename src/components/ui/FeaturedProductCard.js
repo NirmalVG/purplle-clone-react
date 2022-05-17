@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import { Image, Button } from "react-bootstrap";
 
-const PrimerProductCard = ({ trending }) => {
+const FeaturedProductCard = ({ featured }) => {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
-    const chevronWidth = 40;
+    const chevronWidth = 30;
     return (
         <div
             style={{
                 padding: `0 ${chevronWidth}px`,
-                maxWidth: 1000,
+                maxWidth: 1300,
                 margin: "0 auto",
             }}
             className="trending-product-card"
@@ -17,28 +17,28 @@ const PrimerProductCard = ({ trending }) => {
             <ItemsCarousel
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
-                numberOfCards={4}
+                numberOfCards={5}
                 gutter={20}
-                slidesToScroll={4}
+                slclassNameesToScroll={2}
                 leftChevron={<Button>{"<"}</Button>}
                 rightChevron={<Button>{">"}</Button>}
                 outsideChevron={true}
                 chevronWidth={chevronWidth}
             >
-                {trending.map((trending) => (
+                {featured.map((featured) => (
                     <div
-                        style={{ maxHeight: 330, background: "white" }}
-                        className="trending-card-top"
+                        style={{ height: 330, background: "white" }}
+                        id="trending-card-top"
                     >
-                        <Image src={trending.image} alt={trending.name} fluid />
-                        <div className="limit">
-                            <p>{trending.name}</p>
+                        <Image src={featured.image} alt={featured.name} fluid />
+                        <div className="trending-limit">
+                            <p>{featured.name}</p>
                         </div>
-                        <span className="price">{trending.price}</span>
+                        <span className="price">{featured.price}</span>
                         <span className="original-price">
-                            {trending.originalPrice}
+                            {featured.originalPrice}
                         </span>
-                        <span className="discount">{trending.discount}</span>
+                        <span className="discount">{featured.discount}</span>
                     </div>
                 ))}
             </ItemsCarousel>
@@ -46,4 +46,4 @@ const PrimerProductCard = ({ trending }) => {
     );
 };
 
-export default PrimerProductCard;
+export default FeaturedProductCard;

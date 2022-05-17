@@ -1,13 +1,516 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.main-section {
+    position: absolute;
+}
+
+/* AllPrimerProducts */
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999;
+    margin: 0px 5px;
+}
+
+.discount {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ff147b;
+}
+
+/* Banner */
+
+.banner {
+    position: relative;
+}
+
+/* BestSellersProductCard */
+
+.best-limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px; /* fallback */
+    max-height: 32px; /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999;
+    margin: 0px 5px;
+}
+
+.discount {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ff147b;
+}
+
+@media screen and (max-width: 992px) {
+    .best-product-card {
+        padding: 0px;
+        height: auto;
+    }
+    .best-card-top {
+        height: auto;
+    }
+}
+
+/* BestSellersSection */
+
+.primer-head {
+    margin: 50px;
+    font-weight: bold;
+    font-family: "PT Serif", serif;
+}
+
+/* BrandMenu */
+
+.brand-menu {
+    z-index: 9;
+    position: absolute;
+    background-color: white;
+    border: 2px solid #e6e6e6;
+}
+
+/* FlatOfferAd */
+
+.pad {
+    padding-right: 4px;
+}
+
+@media screen and (max-width: 992px) {
+    .pad {
+        width: 50%;
+    }
+}
+
+/* Footer */
+
+.copyright {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.text-reset {
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.text-reset a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-reset a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-reset a:hover {
+    color: #ff147b !important;
+}
+
+.banking-img {
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.nav-icons {
+    display: block;
+    width: 100%;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 2px;
+}
+
+.social-network a.icoYoutube:hover {
+    background-color: #ff0000;
+}
+
+.social-network a.icoEmail:hover {
+    background-color: #696969;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #db3236;
+}
+
+.social-network a.icoPinterest:hover {
+    background-color: #e60023;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3b5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
+    background-color: #bc2a8d;
+}
+
+.social-network a.icoInstagram:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoEmail:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoPinterest:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44bcdd;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 25px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #000;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.icon-section {
+    background-color: #fff;
+}
+
+/* LinkNav */
+
+.link-section {
+    padding-top: 10px;
+}
+
+.link-download {
+    margin-left: 10px;
+}
+
+.head-link {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.head-link:hover {
+    color: #ff147b;
+}
+
+/* MainNavigation */
+
+.main-logo {
+    width: 96px;
+    height: 53px;
+}
+
+.elite {
+    width: 36px;
+    height: 30px;
+}
+
+.link-list {
+    color: black !important;
+    font-weight: bold;
+}
+
+.link-list:hover {
+    color: #ff147b !important;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ff147b;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff147b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.category-nav {
+    margin-top: 10px;
+    font-family: "PT Serif", serif;
+}
+
+@media screen and (max-width: 992px) {
+    .mega {
+        display: none;
+    }
+}
+
+/* MegaMenu */
+
+.mega-menu-link {
+    margin-right: 30px;
+}
+
+.main-mega {
+    z-index: 9;
+    position: absolute;
+    background-color: white;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    height: 450px;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.text-main {
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: grey;
+}
+
+.text-main:link {
+    text-decoration: none;
+    color: grey !important;
+}
+
+.text-main:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-main:hover {
+    color: #ff147b !important;
+}
+
+#basic-button {
+    text-transform: capitalize;
+}
+
+/* OfferCode */
+
+.offer-nav {
+    background-color: #f9d3e8;
+    height: 55px;
+    position: relative;
+}
+
+.logo-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+}
+
+.flat-offer {
+    padding: 12px;
+}
+
+.flat-text {
+    font-weight: 300;
+}
+
+.use-code {
+    border: 2px dashed #ff147b;
+    background-color: white;
+    padding: 3px 15px 3px 15px;
+}
+
+.close-head {
+    margin-right: 0px;
+}
+
+.close-button {
+    margin-left: 20px;
+}
+
+.code-name {
+    color: #ff147b;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+    .offer-nav {
+        display: none;
+        position: absolute;
+    }
+}
+
+/* Services */
+
+.service-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #e6e6e6;
+    opacity: 0.7;
+}
+
+.service-head {
+    font-weight: lighter;
+}
+
+.service-text {
+    font-size: 12px;
+}
+
+.service-list:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .service-list {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+/* TrendingProductCard */
+
+.limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px; /* fallback */
+    max-height: 32px; /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999;
+    margin: 0px 5px;
+}
+
+.discount {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ff147b;
+}
+
+@media screen and (max-width: 992px) {
+    .trending-product-card {
+        padding: 0px;
+        height: auto;
+    }
+    .trending-card-top {
+        height: auto;
+    }
+}
+
+/* TrendingSection */
+
+.trending-head {
+    margin: 50px;
+    font-weight: bold;
+    font-family: "PT Serif", serif;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Banner.css";
 import { Carousel, Container } from "react-bootstrap";
 import bannerImages from "../../data/bannerImages";
 

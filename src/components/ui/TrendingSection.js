@@ -1,5 +1,4 @@
 import React from "react";
-import "./TrendingSection.css";
 import { Container, Row, Col } from "react-bootstrap";
 import TrendingProductCard from "./TrendingProductCard";
 import trending from "../../data/trending";

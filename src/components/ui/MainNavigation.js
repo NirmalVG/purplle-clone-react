@@ -1,8 +1,8 @@
 import React from "react";
-import "./MainNavigation.css";
 import { Container, Navbar, Nav, Image, Row, Col } from "react-bootstrap";
 import MegaMenu from "./MegaMenu";
 import { Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const MainNavigation = () => {
     const [open, setOpen] = React.useState(false);
@@ -19,7 +19,8 @@ const MainNavigation = () => {
                     variant="light"
                 >
                     <Container>
-                        <Navbar.Brand href="#home" className="text-start">
+                        <Navbar.Brand className="text-start">
+                            <Link to="/">
                             <Image
                                 src="images/purplle-logo.svg"
                                 className="main-logo"
@@ -28,6 +29,7 @@ const MainNavigation = () => {
                                 src="images/elite.webp"
                                 className="elite"
                             ></Image>
+                            </Link>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">

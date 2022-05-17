@@ -1,9 +1,0 @@
-.pad {
-    padding-right: 4px;
-}
-
-@media screen and (max-width: 992px) {
-    .pad {
-        width: 50%;
-    }
-}

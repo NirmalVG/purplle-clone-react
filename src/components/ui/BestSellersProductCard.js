@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./BestSellersProductCard.css";
 import ItemsCarousel from "react-items-carousel";
 import { Image, Button } from "react-bootstrap";
 
@@ -13,7 +12,7 @@ const BestSellersProductCard = ({ best }) => {
                 maxWidth: 1000,
                 margin: "0 auto",
             }}
-            className="best-product-card"
+            className="featured-product-card"
         >
             <ItemsCarousel
                 requestToChangeActive={setActiveItemIndex}
@@ -29,7 +28,7 @@ const BestSellersProductCard = ({ best }) => {
                 {best.map((best) => (
                     <div
                         style={{ height: 330, background: "white" }}
-                        id="best-card-top"
+                        id="featured-card-top"
                     >
                         <Image src={best.image} alt={best.name} fluid />
                         <div className="best-limit">

@@ -1,5 +1,4 @@
 import React from "react";
-import "./LinkNav.css";
 import { Container, Row, Col } from "react-bootstrap";
 import {Divider} from "@mui/material"
 

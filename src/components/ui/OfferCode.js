@@ -1,5 +1,4 @@
 import React from "react";
-import "./OfferCode.css";
 import {
     Container,
     Row,
