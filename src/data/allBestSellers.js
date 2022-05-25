@@ -9,7 +9,7 @@ const allbestSellers = [
     },
     {
         _id: "2",
-        name: "Good Vibes Vitamin C & B3 Skin Glow Face Serum | With...",
+        name: "Good Vibes Vitamin C & B3 Skin Glow Face Serum...",
         image: "/images/good-vibes-vitamin-c-and-b3-skin-glow-face-serum.webp",
         price: "₹168",
         originalPrice: 240,
@@ -17,7 +17,7 @@ const allbestSellers = [
     },
     {
         _id: "3",
-        name: "Mamaearth Ubtan Natural Face Wash For Dry Skin With...",
+        name: "Mamaearth Ubtan Natural Face Wash For Dry Skin...",
         image: "/images/mamaearth-ubtan-natural-face-wash.webp",
         price: "₹249",
     },
@@ -39,7 +39,7 @@ const allbestSellers = [
     },
     {
         _id: "6",
-        name: "Good Vibes Rose Glow Toner | Lightweight, Brightening...",
+        name: "Good Vibes Rose Glow Toner | Lightweight...",
         image: "/images/good-vibes-toner-rose-glow.webp",
         price: "₹144",
         originalPrice: 205,
@@ -47,7 +47,7 @@ const allbestSellers = [
     },
     {
         _id: "7",
-        name: "NY Bae Brightenin' Primer|Face Primer| For Brightening...",
+        name: "NY Bae Brightenin' Primer|Face Primer| For...",
         image: "/images/ny-bae-primer-gold.webp",
         price: "₹169",
         originalPrice: 225,
@@ -63,7 +63,7 @@ const allbestSellers = [
     },
     {
         _id: "9",
-        name: "Good Vibes Papaya Brightening Face Wash | Deep Pore...",
+        name: "Good Vibes Papaya Brightening Face Wash...",
         image: "/images/good-vibes-brightening-face-wash-papaya.webp",
         price: "₹172",
         originalPrice: 215,
@@ -126,7 +126,7 @@ const allbestSellers = [
         discount: "15% off",
     },
     {
-        _id: "16",
+        _id: "17",
         name: "Alps Goodness Powder - Sandalwood (50 g) | 100%...",
         image: "/images/alps-goodness-sandalwood-powder.webp",
         price: "₹100",
