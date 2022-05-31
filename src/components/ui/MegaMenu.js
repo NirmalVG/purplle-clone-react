@@ -185,7 +185,7 @@ const MegaMenu = () => {
                     </Button>
                 </span>
             </div>
-            <div>
+            <div onMouseEnter={handleOpen} onMouseLeave={handleClose}>
                 {open ? (
                     <Card>
                         <Container className="main-mega">
@@ -276,7 +276,13 @@ const MegaMenu = () => {
                                         Eyebrow Enhancer
                                     </Link>
                                 </Col>
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6>LIP MAKEUP</h6>
                                     <Link href="#!" className="text-main pb-0">
                                         Lipstick
@@ -399,7 +405,10 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div
+                onMouseEnter={handleSkinCareOpen}
+                onMouseLeave={handleSkinCareClose}
+            >
                 {skinCareOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -506,7 +515,13 @@ const MegaMenu = () => {
                                     </h6>
                                 </Col>
 
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6>EYECARE</h6>
                                     <Link href="#!" className="text-main pb-0">
                                         Lipstick
@@ -635,7 +650,10 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div
+                onMouseEnter={handleHairCareOpen}
+                onMouseLeave={handleHairCareClose}
+            >
                 {hairCareOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -702,7 +720,13 @@ const MegaMenu = () => {
                                         Hair Roller & Curlers
                                     </Link>
                                 </Col>
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6>HAIR ACCESSORIES</h6>
                                     <Link href="#!" className="text-main pb-0">
                                         Hair Clips, Brands & More
@@ -764,7 +788,10 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div
+                onMouseEnter={handleAppliancesOpen}
+                onMouseLeave={handleAppliancesClose}
+            >
                 {appliancesOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -794,7 +821,13 @@ const MegaMenu = () => {
                                     </Link>
                                 </Col>
 
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6>HAIR REMOVAL TOOLS</h6>
                                     <Link href="#!" className="text-main pb-0">
                                         Body Groomers
@@ -827,7 +860,10 @@ const MegaMenu = () => {
                 ) : null}
             </div>
 
-            <div>
+            <div
+                onMouseEnter={handlePersonalCareOpen}
+                onMouseLeave={handlePersonalCareClose}
+            >
                 {personalCareOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -909,7 +945,13 @@ const MegaMenu = () => {
                                     </Link>
                                 </Col>
 
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6 className="head-text-primer">
                                         MEN'S GROOMING
                                     </h6>
@@ -996,7 +1038,7 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div onMouseEnter={handleMenOpen} onMouseLeave={handleMenClose}>
                 {menOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -1050,7 +1092,13 @@ const MegaMenu = () => {
                                     </Link>
                                 </Col>
 
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6 className="head-text-primer">
                                         HAIR CARE
                                     </h6>
@@ -1136,7 +1184,10 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div
+                onMouseEnter={handleFragranceOpen}
+                onMouseLeave={handleFragranceClose}
+            >
                 {fragranceOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -1184,7 +1235,10 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div
+                onMouseEnter={handleHealthOpen}
+                onMouseLeave={handleHealthClose}
+            >
                 {healthOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -1240,7 +1294,13 @@ const MegaMenu = () => {
                                         Pain Relief & First Aid
                                     </Link>
                                 </Col>
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6 className="head-text-primer">
                                         BY CONCERNS
                                     </h6>
@@ -1275,7 +1335,7 @@ const MegaMenu = () => {
                     </Card>
                 ) : null}
             </div>
-            <div>
+            <div onMouseEnter={handleBabyOpen} onMouseLeave={handleBabyClose}>
                 {babyOpen ? (
                     <Card>
                         <Container className="main-mega">
@@ -1329,7 +1389,13 @@ const MegaMenu = () => {
                                         Hair Care
                                     </Link>
                                 </Col>
-                                <Col className="gray-sec" lg={3} md={3} sm={3} xs={3}>
+                                <Col
+                                    className="gray-sec"
+                                    lg={3}
+                                    md={3}
+                                    sm={3}
+                                    xs={3}
+                                >
                                     <h6 className="head-text-primer">
                                         MATERNITY CARE
                                     </h6>
